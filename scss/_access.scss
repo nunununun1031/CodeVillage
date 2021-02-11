@@ -1,0 +1,64 @@
+#access {
+    width: 100%;
+    height: 800px;
+    background-color: #A193861F;
+    @include pc {
+        padding: 260px 0 70px;
+
+    }
+    @include tab {
+        padding: 60px 0 60px;
+    }
+    h1 {
+        margin-left: 7.5%;
+    }
+}
+.access__wrap {
+    &__content {
+        display: flex;
+        height: 400px;
+        @include tab {
+            flex-direction: column;
+            height: 515px;
+        }
+        &__address {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #D0C5BA;
+            @include pc {
+                width: 40%;
+                padding-left: 7.5%;
+            }
+            @include tab {
+                order: 1;
+                padding: 30px 0 60px 20px;
+            }
+
+            h2 {
+                font-size: 24px;
+                color: #00000038;
+            }
+            p {
+                color: white;
+                font-size: 16px;
+                margin-top: 23px;
+            }
+        }
+        &__img {
+            height: 100%;
+            @include pc {
+                width: 60%;
+            }
+            @include tab {
+                order: 0;
+
+            }
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+}

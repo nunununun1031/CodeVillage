@@ -1,0 +1,81 @@
+#concept {
+    height: 1000px;
+    background: linear-gradient(180deg, $color-1 0%, $color-1 40%, $color-2 40%, $color-2 100%);
+    @include tab {
+        height: 710px;
+    }
+}
+
+.concept__wrap {
+    display: flex;
+    @include pc {
+        height: 40%;
+    }
+    @include tab {
+        height: 28%;
+    }
+    &__img1 {
+        width: 62%;
+        @include tab {
+            width: 50%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+    &__img2 {
+        width: 36%;
+        margin-left: 5px;
+        @include tab {
+            width: 50%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.concept__text {
+    display: flex;
+    justify-content: center;
+    font-family: 'ヒラギノ明朝 Pro';
+    color: white;
+    @include pc {
+        width: 85%;
+        margin: 90px auto 0;
+    }
+    @include tab {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    h2 {
+        font-size: 4.2rem;
+        @include pc {
+            width: 40%;
+            white-space: nowrap;
+            margin: auto;
+        }
+        @include tab {
+            font-size: 18px;
+        }
+    }
+    p {
+        font-size: 1.7rem;
+        @include pc {
+            margin-left: 57px;   
+            width: 38%;
+        }
+        @include tab {
+            font-size: 16px;
+            line-height: 27px;
+            width: 100%;
+            letter-spacing: 1.6px;
+            margin-top: 18px;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+#menu {
+    width: 100%;
+    height: 900px;
+    @include sp {
+        height: auto;
+    }
+}
+.menu__wrap {
+    display: flex;
+    margin-bottom: 70px;
+    @include sp {
+        flex-direction: column;
+    }
+    &__card {
+        width: 27rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @include sp {
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__img {
+            width: 100%;
+            height: 27rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        h2 {
+            font-size: 30px;
+            margin-top: 37px;
+            @include pc {
+                text-align: center;
+            }
+            @include sp {
+                padding-left: 13px;
+
+            }
+        }
+        p {
+            font-size: 16px;
+        }
+        &__text {
+            margin-top: 34px;
+            line-height: 26px;
+            @include sp {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+        }
+        &__price {
+            text-align: right;
+            margin-top: 34px;
+            @include sp {
+                padding-right: 13px;
+
+            }
+        }
+    }
+}
+.menu__wrap__card:not(:first-child) {
+    @include pc {
+        margin-left: 10%;
+    }
+    @include sp {
+        margin-top: 62px;
+    }
+}

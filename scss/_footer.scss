@@ -1,0 +1,61 @@
+#reserve {
+    height: 350px;
+    width: 100%;
+}
+.footer__wrap {
+    padding-top: 165px;
+    width: 85%;
+    margin: 165px auto 70px;
+    border-top: 1px dotted rgb(153, 153, 153);
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        @include tab {
+            flex-direction: column;
+        }
+        &__text {
+            display: flex;
+            @include tab {
+                order: 1;
+                justify-content: space-between;
+                margin-top: 62px;
+            }
+            h1 {
+                font-size: 32px;
+                color: #7070704D;
+                @include sp {
+                    font-size: 18px;
+                }
+            }
+            .fab {
+                @include pc {
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+                @include tab {
+                    font-size: 18px;
+                }
+            }
+            .fa-twitter {
+                margin-left: 26px;
+            }
+            .fa-facebook-square {
+                margin-left: 9px;
+            }
+        }
+        button {
+            width: 184px;
+            height: 40px;
+            border: 1px solid #707070;
+            background: white;
+            @include tab {
+                order:0;
+                margin: 0 auto;
+            }
+            a {
+                font-size: 18px;
+                color: #707070;
+            }
+        }
+    }
+}
